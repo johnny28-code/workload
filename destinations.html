@@ -1,0 +1,222 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Explore Lesotho's top destinations: Maletsunyane Falls, Sani Pass, Thaba Bosiu, Ts'ehlanyane, Katse Dam, Sehlabathebe, and AfriSki.">
+  <title>Discover Lesotho | Highland Destinations</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="site-header"></div>
+
+  <main>
+    <section class="pagehero" style="--hero:url('">
+      <div class="container">
+        <span class="eyebrow">AUTHENTIC HIGHLAND WONDERS</span>
+        <h1>Find your next<br>favourite view.</h1>
+        <p>
+          From the thunder of Maletsunyane Falls to the dizzying switchbacks of Sani Pass, explore the unforgettable destinations of the Kingdom in the Sky.
+        </p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="tools">
+          <div>
+            <span class="eyebrow">DISCOVER BY REGION & INTEREST</span>
+            <h2>Explore Lesotho's Destinations</h2>
+          </div>
+          <div class="search">
+            <input id="destinationSearch" type="search" placeholder="Search by name, district, or keyword..." aria-label="Search destinations">
+            <button class="btn dark" id="clearSearch">Clear</button>
+          </div>
+        </div>
+
+        <div class="filters">
+          <button class="filter active" data-filter="all">All Destinations</button>
+          <button class="filter" data-filter="mountains">Mountains & Passes</button>
+          <button class="filter" data-filter="nature">Nature & Parks</button>
+          <button class="filter" data-filter="culture">Culture & Heritage</button>
+          <button class="filter" data-filter="adventure">Adventure & Thrills</button>
+        </div>
+
+        <div class="grid three" id="destinationGrid">
+          <article class="card destination" data-category="nature adventure mountains" data-name="maletsunyane falls semonkong waterfall maseru gorge abseil 192m">
+            <img src="maletsunyane fall.jpg">
+            <div class="pad">
+              <span class="badge-district">Semonkong (maseru district)</span>
+              <small>NATURE & ADVENTURE</small>
+              <h3>Maletsunyane Falls</h3>
+              <div class="pill-tags">
+                <span class="pill-tag">192m Single Drop</span>
+                <span class="pill-tag">World Record Abseil</span>
+                <span class="pill-tag">Pony Trekking</span>
+              </div>
+              <p>
+                Plunging 192 metres (630 ft) in an unbroken single drop into a sheer basalt canyon near Semonkong ("Place of Smoke"). It holds the Guinness World Record for the highest commercial abseil (204m) and is a legendary pony trekking destination.
+              </p>
+              <a href="contact.html#booking">Plan a visit →</a>
+            </div>
+          </article>
+
+          <article class="card destination" data-category="culture heritage" data-name="thaba bosiu mountain cultural village king moshoeshoe qiloane heritage maseru">
+            <img src="thaba-bosiu.jpg">
+            <div class="pad">
+              <span class="badge-district">Maseru District</span>
+              <small>CULTURE & HERITAGE</small>
+              <h3>Thaba Bosiu Cultural Village</h3>
+              <div class="pill-tags">
+                <span class="pill-tag">National Monument</span>
+                <span class="pill-tag">Founded 1824</span>
+                <span class="pill-tag">Sacred Plateau</span>
+              </div>
+              <p>
+                The historic mountain citadel where King Moshoeshoe I united the Basotho nation in 1824. Tour the royal tombs of Basotho monarchs, view the iconic Mount Qiloane, and experience living heritage at the modern Cultural Village.
+              </p>
+              <a href="contact.html#booking">Plan a visit →</a>
+            </div>
+          </article>
+
+          <article class="card destination" data-category="mountains adventure" data-name="sani pass mokhotlong drakensberg 4x4 highest pub escarpment 2876m">
+            <img src="sani pass.jpg">
+            <div class="pad">
+              <span class="badge-district">Mokhotlong District</span>
+              <small>MOUNTAINS & ADVENTURE</small>
+              <h3>Sani Pass & Escarpment</h3>
+              <div class="pill-tags">
+                <span class="pill-tag">2,876m Summit</span>
+                <span class="pill-tag">4x4 Iconic Route</span>
+                <span class="pill-tag">Highest Pub in Africa</span>
+              </div>
+              <p>
+                Southern Africa's most famous mountain pass, climbing 2,876 metres up sheer rocky hairpin bends. Enjoy breathtaking panoramic views from the escarpment and warm up at the legendary "Highest Pub in Africa" at Sani Top.
+              </p>
+              <a href="contact.html#booking">Plan a visit →</a>
+            </div>
+          </article>
+
+          <article class="card destination" data-category="nature mountains" data-name="ts'ehlanyane national park leribe indigenous forest bamboo maliba reserve">
+            <img src="ts'ehlanyane.jpg">
+            <div class="pad">
+              <span class="badge-district">Leribe District</span>
+              <small>NATURE & WILDERNESS</small>
+              <h3>Ts'ehlanyane National Park</h3>
+              <div class="pill-tags">
+                <span class="pill-tag">Indigenous Forest</span>
+                <span class="pill-tag">Berg Bamboo</span>
+                <span class="pill-tag">Maliba Mountain Lodge</span>
+              </div>
+              <p>
+                Spanning 5,600 hectares in the northern Maloti Mountains, this reserve preserves Lesotho's rare sub-alpine indigenous trees, dense mountain bamboo groves, pristine swimming streams, and luxury eco-lodge hospitality.
+              </p>
+              <a href="contact.html#booking">Plan a visit →</a>
+            </div>
+          </article>
+
+          <article class="card destination" data-category="nature mountains" data-name="katse dam thaba-tseka malibamat'so engineering reservoir botanical garden 185m">
+            <img src="botanical garden.jpg">
+            <div class="pad">
+              <span class="badge-district">Thaba-Tseka District</span>
+              <small>ENGINEERING & SCENERY</small>
+              <h3>Katse Dam & Botanical Garden</h3>
+              <div class="pill-tags">
+                <span class="pill-tag">185m Arch Wall</span>
+                <span class="pill-tag">Alpine Reservoir</span>
+                <span class="pill-tag">Water Project</span>
+              </div>
+              <p>
+                Africa's second-largest double-curvature arch dam wall stands 185 metres high on the Malibamat'so River. Visitors can tour inside the monumental dam wall galleries, embark on boat cruises, and explore the alpine Katse Botanical Garden.
+              </p>
+              <a href="contact.html#booking">Plan a visit →</a>
+            </div>
+          </article>
+
+           <article class="card destination" data-category="nature culture heritage" data-name="sehlabathebe national park qacha's nek unesco world heritage sandstone arches san rock art">
+            <img src="sehlabathebe.jpg">
+            <div class="pad">
+              <span class="badge-district">Qacha's Nek District</span>
+              <small>UNESCO WORLD HERITAGE</small>
+              <h3>Sehlabathebe National Park</h3>
+              <div class="pill-tags">
+                <span class="pill-tag">UNESCO Site</span>
+                <span class="pill-tag">Sandstone Arches</span>
+                <span class="pill-tag">San Rock Art</span>
+              </div>
+              <p>
+                Part of the Maloti-Drakensberg UNESCO World Heritage Site, Sehlabathebe features dramatic weathered sandstone rock arches, high mountain tarns, ancient San (Bushman) rock paintings, and the endemic Maloti minnow.
+              </p>
+              <a href="contact.html#booking">Plan a visit →</a>
+            </div>
+          </article>
+
+          <article class="card destination" data-category="adventure mountains" data-name="afriski mahlasela pass butha-buthe snow skiing snowboarding winter mountain bike 3222m">
+            <img src="afriski.jpg">
+            <div class="pad">
+              <span class="badge-district">Butha-Buthe District</span>
+              <small>WINTER SPORTS & MTB</small>
+              <h3>AfriSki & Mahlasela Pass</h3>
+              <div class="pill-tags">
+                <span class="pill-tag">3,222m Elevation</span>
+                <span class="pill-tag">Winter Ski Resort</span>
+                <span class="pill-tag">Summer Downhill MTB</span>
+              </div>
+              <p>
+                Situated at 3,222 metres on the Mahlasela Pass, AfriSki is one of Africa's few winter ski and snowboard resorts (June–August). In summer, it hosts premier mountain biking, trail running, and high-altitude endurance training.
+              </p>
+              <a href="contact.html#booking">Plan a visit →</a>
+            </div>
+          </article>
+
+          <article class="card destination" data-category="culture heritage" data-name="ha kome cave dwellings berea mud houses heritage history kome clan">
+            <img src="kome.jpg">
+            <div class="pad">
+              <span class="badge-district">Berea District</span>
+              <small>CULTURE & LIVING HISTORY</small>
+              <h3>Ha Kome Cave Dwellings</h3>
+              <div class="pill-tags">
+                <span class="pill-tag">19th-Century Caves</span>
+                <span class="pill-tag">Living Heritage</span>
+                <span class="pill-tag">Berea District</span>
+              </div>
+              <p>
+                Unique 19th-century mud-and-thatch cave houses built beneath a towering curved sandstone overhang. Established during the Lifaqane wars as a mountain sanctuary, they remain occupied today by descendants of the original Kome clan.
+              </p>
+              <a href="contact.html#booking">Plan a visit →</a>
+            </div>
+          </article>
+
+          <article class="card destination" data-category="culture" data-name="maseru capital caledon river crafts mohair tapestries mokorotlo city markets">
+            <img src="center.jpg">
+            <div class="pad">
+              <span class="badge-district">Maseru District</span>
+              <small>CAPITAL & COMMERCE</small>
+              <h3>Maseru & Craft Centres</h3>
+              <div class="pill-tags">
+                <span class="pill-tag">National Capital</span>
+                <span class="pill-tag">Basotho Hat Building</span>
+                <span class="pill-tag">Mohair Tapestries</span>
+              </div>
+              <p>
+                The vibrant capital city on the banks of the Caledon (Mohokare) River. Visit the iconic Basotho Hat (Mokorotlo) craft centre, discover handwoven mohair tapestries, taste traditional local dishes, and explore lively urban markets.
+              </p>
+              <a href="contact.html#booking">Plan a visit →</a>
+            </div>
+          </article>
+        </div>
+
+        <p id="noResults" class="empty hidden">
+          No destinations match your search or filter. Try another keyword (e.g. "waterfall", "pass", "culture", or "Sani").
+        </p>
+      </div>
+    </section>
+  </main>
+
+  <div id="site-footer"></div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,272 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Register as a traveler and contact the Kingdom of Lesotho Tourism desk in one unified form. Border hours, tourist office details, and interactive trip budget calculator.">
+  <title>Discover Lesotho | Traveler Registration & Contact</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="site-header"></div>
+
+  <main>
+    <section class="pagehero" style="--hero:url('ht">
+      <div class="container">
+        <span class="eyebrow">UNIFIED TRAVELER PORTAL</span>
+        <h1>Traveler Registration<br>& Contact Desk.</h1>
+        <p>
+          Register your explorer profile and submit your travel inquiries directly to our mountain tourism team in one combined form.
+        </p>
+      </div>
+    </section>
+
+    <section class="section soft">
+      <div class="container">
+        <div class="heading text-center mx-auto">
+          <span class="eyebrow">ESSENTIAL TRAVEL TOOLS</span>
+          <h2>Highland Planning Hub</h2>
+          <p>
+            Review official tourism information and estimate your activity costs before submitting your unified registration and travel enquiry.
+          </p>
+        </div>
+
+        <div class="grid two mt-4">
+          <div class="info contactinfo">
+            <b>⌖ Lesotho Tourism Centre</b>
+            <p>Kingsway Road, Maseru 100, Kingdom of Lesotho</p>
+
+            <b>✉ Email Enquiries</b>
+            <p>kananelosebilo49@gmail.com</p>
+
+            <b>☏ Telephone & WhatsApp</b>
+            <p>+266 53056442 / +266 62160982</p>
+
+            <b>◷ Border Post Operating Hours</b>
+            <p class="mb-0">
+              <strong>Maseru Bridge & Ficksburg:</strong> 24 Hours Daily<br>
+              <strong>Sani Pass Border:</strong> 06:00 – 18:00 Daily
+            </p>
+          </div>
+
+          <div class="calculator">
+            <span class="eyebrow">TRIP BUDGET ESTIMATOR</span>
+            <h3>Estimate Activity Costs</h3>
+            <p class="small text-muted mb-3">
+              Prices in Lesotho Maloti (M) — pegged 1:1 with the South African Rand (ZAR).
+            </p>
+
+            <label for="activityType">Select Guided Highland Experience</label>
+            <select id="activityType" class="form-select">
+              <option value="450" selected>Semonkong Pony Trek & Maletsunyane Falls — M450/person</option>
+              <option value="250">Thaba Bosiu Cultural Heritage Tour — M250/person</option>
+              <option value="600">Sani Pass 4x4 Escarpment Mountain Safari — M600/person</option>
+              <option value="200">Ts'ehlanyane Indigenous Forest Wilderness Walk — M200/person</option>
+              <option value="850">Maletsunyane Falls 204m World Record Abseil — M850/person</option>
+              <option value="350">Katse Dam Wall Tour & Boat Cruise — M350/person</option>
+              <option value="1200">3-Day Highland Trek & Village Homestay — M1,200/person</option>
+            </select>
+
+            <label for="travellerCount">Number of Travellers</label>
+            <input id="travellerCount" class="form-control" type="number" min="1" max="30" value="2">
+
+            <div class="estimate">
+              <div>
+                <span class="d-block small text-muted">Estimated Total (M / ZAR)</span>
+                <span class="small text-success">Pegged 1:1 with SA Rand</span>
+              </div>
+              <strong id="estimateTotal">M900</strong>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="booking">
+      <div class="container">
+        <div class="heading text-center mx-auto">
+          <span class="eyebrow">COMBINED PORTAL</span>
+          <h2>Register & Contact Our Highland Team</h2>
+          <p>
+            Complete your profile and send your inquiry in one unified submission. All fields are organized below into clear registration and contact sections.
+          </p>
+        </div>
+
+        <div class="row justify-content-center mt-4">
+          <div class="col-lg-10">
+            <div class="formpanel">
+              <div class="d-flex align-items-center justify-content-between mb-3 flex-wrap gap-2">
+                <span class="badge-district">Unified Form • Registration & Contact</span>
+                <span class="small text-muted">Official Tourism Submission</span>
+              </div>
+              <h3 class="mb-2">Traveler Registration & Inquiry Form</h3>
+              <p class="small text-muted mb-4">
+                Fill in your traveler particulars and your specific message or question below. Both will be processed together.
+              </p>
+
+              <form id="combinedForm" novalidate>
+                <!-- FIELDSET 1: TRAVELER REGISTRATION PARTICULARS -->
+                <fieldset class="form-section">
+                  <legend class="form-legend">
+                    <span class="badge-district">01</span> Traveler Registration Particulars
+                  </legend>
+                  <p class="small text-muted mb-3">
+                    Your personal details will register your traveler profile for guide bookings, itinerary saving, and emergency assistance.
+                  </p>
+
+                  <div class="row g-3">
+                    <div class="col-md-6">
+                      <label for="regFirstName">First Name *</label>
+                      <input class="form-control" id="regFirstName" required minlength="2" placeholder="e.g. Kananelo">
+                      <div class="invalid-feedback">Please enter your first name (min 2 characters).</div>
+                    </div>
+
+                    <div class="col-md-6">
+                      <label for="regLastName">Last Name *</label>
+                      <input class="form-control" id="regLastName" required minlength="2" placeholder="e.g. Sebilo">
+                      <div class="invalid-feedback">Please enter your last name (min 2 characters).</div>
+                    </div>
+
+                    <div class="col-md-6">
+                      <label for="regEmail">Email Address *</label>
+                      <input class="form-control" id="regEmail" type="email" required placeholder="kananelosebilo49@gmail.com">
+                      <div class="invalid-feedback">Please enter a valid email address.</div>
+                    </div>
+
+                    <div class="col-md-6">
+                      <label for="regPhone">Phone / WhatsApp *</label>
+                      <input class="form-control" id="regPhone" type="tel" required pattern="[0-9+() -]{7,20}" placeholder="+266 ... or +27 ...">
+                      <div class="invalid-feedback">Please enter a valid phone number.</div>
+                    </div>
+
+                    <div class="col-md-6">
+                      <label for="regCountry">Country of Residence *</label>
+                      <select class="form-select" id="regCountry" required>
+                        <option value="">Select your country</option>
+                        <option value="Lesotho" selected>Lesotho</option>
+                        <option value="South Africa">South Africa</option>
+                        <option value="Botswana">Botswana</option>
+                        <option value="Namibia">Namibia</option>
+                        <option value="United Kingdom">United Kingdom</option>
+                        <option value="United States">United States</option>
+                        <option value="Germany">Germany</option>
+                        <option value="France">France</option>
+                        <option value="Netherlands">Netherlands</option>
+                        <option value="Australia">Australia</option>
+                        <option value="Canada">Canada</option>
+                        <option value="Other">Other Country</option>
+                      </select>
+                      <div class="invalid-feedback">Please select your country of residence.</div>
+                    </div>
+
+                    <div class="col-md-6">
+                      <label for="regPassword">Account Password *</label>
+                      <input class="form-control" id="regPassword" type="password" required minlength="6" placeholder="At least 6 characters">
+                      <div class="invalid-feedback">Password must be at least 6 characters.</div>
+                    </div>
+
+                    <div class="col-12">
+                      <label for="regTravelInterest">Primary Highland Interest *</label>
+                      <select class="form-select" id="regTravelInterest" required>
+                        <option value="">Select your primary interest</option>
+                        <option value="pony-trekking">Basotho Mountain Pony Trekking & Bridle Trails</option>
+                        <option value="sani-4x4">Sani Pass & 4x4 Alpine Escarpment Overlanding</option>
+                        <option value="maletsunyane">Maletsunyane Falls Gorge Abseiling (204m)</option>
+                        <option value="culture">Thaba Bosiu & Living Basotho Heritage</option>
+                        <option value="nature">Ts'ehlanyane Indigenous Forest & Wilderness</option>
+                        <option value="afriski">AfriSki Winter Skiing & Downhill Mountain Biking</option>
+                        <option value="general">Comprehensive Sightseeing & Photography Tour</option>
+                      </select>
+                      <div class="invalid-feedback">Please select your primary travel interest.</div>
+                    </div>
+                  </div>
+                </fieldset>
+
+                <fieldset class="form-section">
+                  <legend class="form-legend">
+                    <span class="badge-district">02</span> Contact Message & Travel Inquiry
+                  </legend>
+                  <p class="small text-muted mb-3">
+                    Let us know what questions you have or details about your planned trip.
+                  </p>
+
+                  <div class="row g-3">
+                    <div class="col-md-6">
+                      <label for="contactTopic">Inquiry Category *</label>
+                      <select class="form-select" id="contactTopic" required>
+                        <option value="">Select an inquiry topic</option>
+                        <option>Border Hours & Visa Information</option>
+                        <option>Sani Pass Road & Weather Conditions</option>
+                        <option>Guide Booking & Village Homestays</option>
+                        <option>Maletsunyane Abseiling & Adventure</option>
+                        <option>Group, Educational or Media Rates</option>
+                        <option>General Travel Question</option>
+                      </select>
+                      <div class="invalid-feedback">Please choose an inquiry topic.</div>
+                    </div>
+
+                    <div class="col-md-6">
+                      <label for="travelDate">Planned Travel Date (Optional)</label>
+                      <input class="form-control" id="travelDate" type="date">
+                    </div>
+
+                    <div class="col-12">
+                      <label for="contactSubject">Subject *</label>
+                      <input class="form-control" id="contactSubject" required minlength="4" placeholder="e.g. Sani Pass winter access and pony trekking availability">
+                      <div class="invalid-feedback">Please enter a subject (at least 4 characters).</div>
+                    </div>
+
+                    <div class="col-12">
+                      <label for="contactMessage">Message Details *</label>
+                      <textarea class="form-control" id="contactMessage" rows="4" required minlength="10" placeholder="Type your detailed message, planned dates, group size, or specific assistance required..."></textarea>
+                      <div class="invalid-feedback">Please write at least 10 characters.</div>
+                    </div>
+                  </div>
+                </fieldset>
+
+                <fieldset class="form-section">
+                  <legend class="form-legend">
+                    <span class="badge-district">03</span> Terms & Declarations
+                  </legend>
+
+                  <div class="row g-3">
+                    <div class="col-12">
+                      <div class="form-check">
+                        <input class="form-check-input" id="termsConsent" type="checkbox" required>
+                        <label class="form-check-label small" for="termsConsent">
+                          I agree to the Terms of Service, Privacy Policy, and High-Altitude Mountain Travel Guidelines. *
+                        </label>
+                        <div class="invalid-feedback">You must agree to the terms to proceed.</div>
+                      </div>
+                    </div>
+
+                    <div class="col-12">
+                      <div class="form-check">
+                        <input class="form-check-input" id="newsletterConsent" type="checkbox" checked>
+                        <label class="form-check-label small" for="newsletterConsent">
+                          Subscribe to real-time Sani Pass weather advisories and quarterly Lesotho highland journals.
+                        </label>
+                      </div>
+                    </div>
+
+                    <div class="col-12 mt-4">
+                      <button class="btn dark w-100 py-3 fs-6" type="submit">Submit Registration & Send Message →</button>
+                      <div id="combinedMessageBox" class="form-message" aria-live="polite"></div>
+                    </div>
+                  </div>
+                </fieldset>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <div id="site-footer"></div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="js/script.js"></script>
+</body>
+</html>
